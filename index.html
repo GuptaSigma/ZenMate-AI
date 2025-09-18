@@ -1,0 +1,157 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome - MindfulChat AI Mental Health Companion{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="container">
+        <div class="row align-items-center min-vh-75">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <h1 class="display-4 fw-bold mb-4 text-primary">
+                        Your Enhanced AI Companion
+                    </h1>
+                    <p class="lead mb-4 text-muted">
+                        Experience advanced mental wellness support with multi-emotion detection, 
+                        personalized suggestions, enhanced memory, and voice interaction capabilities.
+                    </p>
+                    
+                    <div class="d-flex flex-column flex-sm-row gap-3 mb-4">
+                        <a href="{{ url_for('chat') }}" class="btn btn-primary btn-lg px-4">
+                            <i data-feather="message-circle" class="me-2"></i>
+                            Start Enhanced Chat
+                        </a>
+                        <a href="{{ url_for('resources') }}" class="btn btn-outline-secondary btn-lg px-4">
+                            <i data-feather="book-open" class="me-2"></i>
+                            View Resources
+                        </a>
+                    </div>
+                    
+                    <div class="features-preview">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i data-feather="zap" class="feature-icon text-primary"></i>
+                                    <div>
+                                        <h6 class="mb-1">Multi-Emotion Detection</h6>
+                                        <small class="text-muted">Advanced emotion analysis beyond basic sentiment</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i data-feather="target" class="feature-icon text-primary"></i>
+                                    <div>
+                                        <h6 class="mb-1">Personalized Suggestions</h6>
+                                        <small class="text-muted">Tailored resources, quotes, and techniques</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i data-feather="mic" class="feature-icon text-primary"></i>
+                                    <div>
+                                        <h6 class="mb-1">Voice Support</h6>
+                                        <small class="text-muted">Speech-to-text input and audio responses</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="feature-item">
+                                    <i data-feather="database" class="feature-icon text-primary"></i>
+                                    <div>
+                                        <h6 class="mb-1">Enhanced Memory</h6>
+                                        <small class="text-muted">Context-aware conversations</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="hero-image text-center">
+                    <div class="image-placeholder">
+                        <i data-feather="zap" class="hero-icon"></i>
+                        <div class="floating-elements">
+                            <div class="floating-item floating-item-1">
+                                <i data-feather="heart"></i>
+                            </div>
+                            <div class="floating-item floating-item-2">
+                                <i data-feather="mic"></i>
+                            </div>
+                            <div class="floating-item floating-item-3">
+                                <i data-feather="zap"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+            <h2 class="h3 mb-4">Enhanced Features</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h5>Express</h5>
+                        <p class="text-muted">Share through text or voice with advanced emotion detection</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h5>Analyze</h5>
+                        <p class="text-muted">AI detects multiple emotions and understands context</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h5>Receive</h5>
+                        <p class="text-muted">Get personalized suggestions and empathetic responses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-light py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h3 class="mb-3">Experience the Next Level of AI Wellness Support</h3>
+                <p class="text-muted mb-4">
+                    Our enhanced AI companion uses advanced emotion detection to understand your feelings better 
+                    and provide personalized support tailored to your unique emotional state. With voice support 
+                    and enhanced memory, every conversation builds upon the last.
+                </p>
+                <div class="emotion-showcase d-flex gap-2 mb-4">
+                    <span class="badge bg-primary">😊 Happiness</span>
+                    <span class="badge bg-info">😰 Anxiety</span>
+                    <span class="badge bg-warning">😔 Sadness</span>
+                    <span class="badge bg-success">😌 Calm</span>
+                    <span class="badge bg-danger">😠 Anger</span>
+                    <span class="badge bg-secondary">And more...</span>
+                </div>
+                <a href="{{ url_for('chat') }}" class="btn btn-primary btn-lg">
+                    <i data-feather="arrow-right" class="me-2"></i>
+                    Try Enhanced Chat
+                </a>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="wellness-visual">
+                    <i data-feather="activity" class="wellness-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

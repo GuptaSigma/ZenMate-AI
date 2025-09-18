@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player - MindfulChat</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">
+            <i data-feather="volume-2" class="me-2"></i>
+            Female Voice Player
+        </h1>
+        <p class="text-center mb-4">Neeche diye gaye button ko click karke welcome voice sunein.</p>
+
+        <div class="text-center">
+            <button id="playVoiceButton" class="btn btn-primary btn-lg">
+                <i data-feather="play" class="me-2"></i>
+                Play Welcome Voice
+            </button>
+        </div>
+
+        <audio id="femaleVoiceAudio" src="{{ url_for('static', filename='audio/welcome-voice.mp3') }}"></audio>
+        
+        <div class="text-center mt-4">
+            <a href="{{ url_for('chat') }}" class="btn btn-outline-secondary">
+                <i data-feather="arrow-left" class="me-2"></i>
+                Back to Chat
+            </a>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // JavaScript code button ko kaam karne ke liye
+
+        // Button aur Audio element ko select karein
+        const playButton = document.getElementById('playVoiceButton');
+        const audioPlayer = document.getElementById('femaleVoiceAudio');
+
+        // Button par click event lagayein
+        playButton.addEventListener('click', () => {
+            // Button icon change karein
+            const icon = playButton.querySelector('i');
+            const text = playButton.childNodes[1];
+            
+            if (audioPlayer.paused) {
+                // Audio play karein
+                audioPlayer.play();
+                icon.setAttribute('data-feather', 'pause');
+                text.textContent = ' Playing Voice...';
+                feather.replace();
+            } else {
+                // Audio pause karein
+                audioPlayer.pause();
+                icon.setAttribute('data-feather', 'play');
+                text.textContent = ' Play Welcome Voice';
+                feather.replace();
+            }
+        });
+
+        // Audio ended event
+        audioPlayer.addEventListener('ended', () => {
+            const icon = playButton.querySelector('i');
+            const text = playButton.childNodes[1];
+            icon.setAttribute('data-feather', 'play');
+            text.textContent = ' Play Welcome Voice';
+            feather.replace();
+        });
+
+        // Initialize Feather icons
+        feather.replace();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+{% extends "base.html" %}
+
+{% block title %}Mental Health Resources - MindfulChat{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="text-center mb-5">
+                <h1 class="display-5 fw-bold text-primary mb-3">Mental Health Resources</h1>
+                <p class="lead text-muted">
+                    If you're experiencing a mental health crisis or need immediate support, 
+                    these resources are available to help you.
+                </p>
+            </div>
+            
+            <!-- Emergency Resources -->
+            <div class="alert alert-danger border-0 shadow-sm mb-4">
+                <div class="d-flex">
+                    <div class="me-3">
+                        <i data-feather="alert-circle" class="text-danger"></i>
+                    </div>
+                    <div>
+                        <h5 class="alert-heading">Immediate Emergency</h5>
+                        <p class="mb-2">If you are in immediate danger or having thoughts of self-harm:</p>
+                        <div class="d-grid gap-2 d-md-flex">
+                            <a href="tel:911" class="btn btn-danger">
+                                <i data-feather="phone" class="me-2"></i>Call 911
+                            </a>
+                            <a href="tel:988" class="btn btn-outline-danger">
+                                <i data-feather="phone" class="me-2"></i>988 Crisis Lifeline
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Crisis Support -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-warning-subtle">
+                    <h4 class="card-title mb-0">
+                        <i data-feather="life-buoy" class="me-2"></i>
+                        Crisis Support
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="resource-item">
+                                <h6>988 Suicide & Crisis Lifeline</h6>
+                                <p class="text-muted small mb-2">24/7 free and confidential support</p>
+                                <div class="d-flex gap-2">
+                                    <a href="tel:988" class="btn btn-sm btn-outline-primary">Call 988</a>
+                                    <a href="sms:988" class="btn btn-sm btn-outline-secondary">Text 988</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resource-item">
+                                <h6>Crisis Text Line</h6>
+                                <p class="text-muted small mb-2">Text-based crisis counseling</p>
+                                <a href="sms:741741" class="btn btn-sm btn-outline-primary">Text HOME to 741741</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resource-item">
+                                <h6>SAMHSA National Helpline</h6>
+                                <p class="text-muted small mb-2">Treatment referral service</p>
+                                <a href="tel:1-800-662-4357" class="btn btn-sm btn-outline-primary">1-800-662-HELP</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resource-item">
+                                <h6>Veterans Crisis Line</h6>
+                                <p class="text-muted small mb-2">Support for veterans and families</p>
+                                <a href="tel:1-800-273-8255" class="btn btn-sm btn-outline-primary">Call or Text 988</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Professional Help -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-info-subtle">
+                    <h4 class="card-title mb-0">
+                        <i data-feather="user-check" class="me-2"></i>
+                        Professional Help
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="resource-item">
+                                <h6>Psychology Today</h6>
+                                <p class="text-muted small mb-2">Find therapists and psychiatrists</p>
+                                <a href="https://www.psychologytoday.com" target="_blank" class="btn btn-sm btn-outline-primary">
+                                    Visit Website <i data-feather="external-link" class="ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resource-item">
+                                <h6>NAMI (National Alliance on Mental Illness)</h6>
+                                <p class="text-muted small mb-2">Education, support groups, advocacy</p>
+                                <a href="https://www.nami.org" target="_blank" class="btn btn-sm btn-outline-primary">
+                                    Visit Website <i data-feather="external-link" class="ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resource-item">
+                                <h6>BetterHelp</h6>
+                                <p class="text-muted small mb-2">Online therapy platform</p>
+                                <a href="https://www.betterhelp.com" target="_blank" class="btn btn-sm btn-outline-primary">
+                                    Visit Website <i data-feather="external-link" class="ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resource-item">
+                                <h6>OpenPath Psychotherapy</h6>
+                                <p class="text-muted small mb-2">Affordable therapy options</p>
+                                <a href="https://openpathcollective.org" target="_blank" class="btn btn-sm btn-outline-primary">
+                                    Visit Website <i data-feather="external-link" class="ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Self-Care Resources -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-success-subtle">
+                    <h4 class="card-title mb-0">
+                        <i data-feather="heart" class="me-2"></i>
+                        Self-Care & Wellness
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="resource-item">
+                                <h6>Headspace</h6>
+                                <p class="text-muted small mb-2">Meditation and mindfulness</p>
+                                <a href="https://www.headspace.com" target="_blank" class="btn btn-sm btn-outline-success">
+                                    Visit Website <i data-feather="external-link" class="ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resource-item">
+                                <h6>Calm</h6>
+                                <p class="text-muted small mb-2">Sleep stories, meditation, relaxation</p>
+                                <a href="https://www.calm.com" target="_blank" class="btn btn-sm btn-outline-success">
+                                    Visit Website <i data-feather="external-link" class="ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resource-item">
+                                <h6>MindShift</h6>
+                                <p class="text-muted small mb-2">Anxiety management app</p>
+                                <a href="https://anxietycanada.com/resources/mindshift-app/" target="_blank" class="btn btn-sm btn-outline-success">
+                                    Learn More <i data-feather="external-link" class="ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="resource-item">
+                                <h6>What's Up</h6>
+                                <p class="text-muted small mb-2">Mental health coping methods</p>
+                                <a href="https://whatsupapp.co.uk" target="_blank" class="btn btn-sm btn-outline-success">
+                                    Visit Website <i data-feather="external-link" class="ms-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Important Disclaimer -->
+            <div class="alert alert-info border-0 shadow-sm">
+                <div class="d-flex">
+                    <div class="me-3">
+                        <i data-feather="info" class="text-info"></i>
+                    </div>
+                    <div>
+                        <h6 class="alert-heading">Important Note</h6>
+                        <p class="mb-0">
+                            This enhanced AI companion uses advanced emotion detection and personalized suggestions to provide 
+                            supportive conversation and general wellness guidance. It is not a replacement for professional 
+                            mental health care, therapy, or medical treatment. If you're experiencing severe symptoms or are 
+                            in crisis, please contact a mental health professional or use the emergency resources listed above.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="{{ url_for('chat') }}" class="btn btn-primary btn-lg">
+                    <i data-feather="arrow-left" class="me-2"></i>
+                    Return to Enhanced Chat
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

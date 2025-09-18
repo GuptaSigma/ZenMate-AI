@@ -26,10 +26,6 @@ Text-to-Speech Engine
 
 Replit / GitHub (Deployment)
 
-🚀 Installation
-# Clone the repository
-git clone https://github.com/your-username/SereneAI.git
-cd SereneAI
 
 # Install dependencies
 pip install -r requirements.txt
